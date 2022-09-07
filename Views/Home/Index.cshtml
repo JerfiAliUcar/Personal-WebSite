@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model List<About>
+
+<section class="resume-section" id="about">
+    <div class="resume-section-content">
+        @foreach (var item in Model)
+        {
+            <h1 class="mb-0">
+                @item.Name
+                <span class="text-primary">@item.Surname</span>
+            </h1>
+            <div class="subheading mb-5">
+                @item.Adress
+                <a href="mailto:name@email.com">@item.Mail</a>
+            </div>
+            <p class="">@item.Description</p>
+            
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/jerfi-ali-u%C3%A7ar/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://github.com/JerfiAliUcar"><i class="fab fa-github"></i></a>
+                <a class="social-icon" href="https://twitter.com/jerfiucar"><i class="fab fa-twitter"></i></a>
+                <a class="social-icon" href="https://www.instagram.com/jerfiucar/"><i class="fa-brands fa-instagram"></i></a>
+                
+            </div>
+
+        }
+
+    </div>
+</section>
+<hr class="m-0" />
+

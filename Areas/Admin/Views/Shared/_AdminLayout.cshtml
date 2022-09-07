@@ -1,0 +1,159 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 3 | Project Add</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/plugins/fontawesome-free/css/all.min.css">
+    <script src="https://kit.fontawesome.com/997a8bee10.js" crossorigin="anonymous"></script>
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini " style="background-color:antiquewhite;">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Navbar -->
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside  class="main-sidebar sidebar-dark-primary" style="height:937px;">
+            <!-- Brand Logo -->
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="brand-link brand-image img- elevation-3">
+                <i class="fa-solid fa-house" 
+                   
+                   style="opacity: .8">
+                     
+                </i>
+                <span class="brand-text font-weight-light">Ana Sayfa</span>
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-4 d-flex">
+                    <div class="image">
+                        <img src="~/assets/img/JAU.jpeg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info mt-1">
+                        <a href="#" class="d-block">Jerfi Ali Uçar</a>
+                    </div>
+
+
+
+
+
+                </div>
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                             with font-awesome or any other icon font library -->
+                        
+                      
+                        <li class="nav-item has-treeview">
+                            <a asp-area="Admin" asp-controller="About" asp-action="Index" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Hakkımda
+
+                                </p>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-controller="Education" asp-action="Index" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Eğitimlerim
+
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a asp-area="Admin" asp-controller="Experience" asp-action="Index" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Deneyimlerim
+
+                                </p>
+                            </a>
+
+                        </li>
+
+
+                        <li class="nav-item has-treeview">
+                            <a asp-area="Admin" asp-controller="Interests" asp-action="Index" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Hobiler
+
+                                </p>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-controller="Skills" asp-action="Index" class="nav-link">
+                                <i class="nav-icon far fa-calendar-alt"></i>
+                                <p>
+                                    Yeteneklerim
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-area="Admin" asp-controller="Certification" asp-action="Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Sertifikalarım
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item has-treeview">
+                            <a asp-area="Admin" asp-controller="Contact" asp-action="Index" class="nav-link">
+                                <i class="fa-solid fa-envelope" style="padding-left:8px;"></i>
+                                <p>
+                                    İletişim
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="background-color:antiquewhite">
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-11 mt-5">
+                        @RenderBody()
+                    </div>
+                </div>
+
+            </section>
+            <!-- /.content -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/dist/js/demo.js"></script>
+</body>
+</html>

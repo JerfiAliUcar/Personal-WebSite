@@ -1,0 +1,28 @@
+﻿@model Education
+
+<h2 class="mb-5">Edit Form</h2>
+<form asp-area="Admin" asp-controller="Education" asp-action="Edit" method="post">
+
+    <label class="form-label">Title</label>
+    <input type="text" asp-for="Title" name="Title" class="form-control" required>
+    <br />
+
+    <label class="form-label">Alt Başlık</label>
+    <input type="text" asp-for="SubTitle1" name="SubTitle" class="form-control" required>
+    <br />
+
+    <label class="form-label">Alt Başlık 2</label>
+    <input type="text" asp-for="SubTitle2" name="SubTitle2" class="form-control">
+    <br />
+
+    <label class="form-label">GNO</label>
+    <input type="number" asp-for="GNO" name="GNO" placeholder="Genel Not Ortalaması" class="form-control" required>
+    <br />
+
+    <label class="form-label">Tarih</label>
+    <input type="text" asp-for="Tarih" name="Tarih" class="form-control" required>
+    <br />
+
+    <button class="btn btn-primary">Save</button>
+
+</form>

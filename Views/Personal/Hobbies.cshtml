@@ -1,0 +1,14 @@
+﻿@model List<Interests>
+
+
+<section class="resume-section" id="interests">
+    <div class="resume-section-content">
+        <h2 class="mb-5">HOBİ / İLGİ ALANLARIM</h2>
+        @foreach (Interests item in Model)
+        {
+            <p>@item.Description1</p>
+            <p class="mb-0">@item.Description2</p>
+        }
+    </div>
+</section>
+<hr class="m-0" />

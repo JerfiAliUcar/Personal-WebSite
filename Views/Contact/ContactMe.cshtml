@@ -1,0 +1,32 @@
+﻿
+<section class="resume-section" id="awards">
+    <div class="resume-section-content">
+
+        <div class="resume-section-content">
+            <h2 class="mb-5">İLETİŞİM</h2>
+
+            <form asp-controller="Contact" asp-action="ContactMe" method="post" style="width:60%">
+                <label>Ad-Soyad</label>
+                <input type="text" class="form-control" name="Name" placeholder="Ad-Soyad" maxlength="50" required />
+
+                <label>E-Mail</label>
+
+                <input type="email" class="form-control" name="Mail" maxlength="50" required />
+
+                <label>Konu</label>
+                <input type="text" class="form-control" name="Subject" maxlength="100" required />
+
+                <label>Mesaj</label>
+                <div class="mb-3">
+                    <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <br />
+                <button class="btn btn-primary"> Gönder </button>
+
+
+            </form>
+            <span class="text-success">@ViewBag.Message</span>
+        </div>
+    </div>
+</section>

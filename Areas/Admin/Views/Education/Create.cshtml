@@ -1,0 +1,27 @@
+﻿<h2 class="mb-5">Create New </h2>
+
+<form asp-area="Admin" asp-controller="Education" asp-action="Create" method="post">
+
+    <label class="form-label">Title</label>
+    <input type="text" name="Title" class="form-control" required>
+    <br />
+
+    <label class="form-label">SubTitle</label>
+    <input type="text" name="Subtitle1" class="form-control" required>
+    <br />
+
+    <label class="form-label">SubTitle 2</label>
+    <input type="text" name="SubTitle2" class="form-control" required>
+    <br />
+
+    <label class="form-label">GNO</label>
+    <input type="number" name="GNO" placeholder="Genel Not Ortalaması" class="form-control" required>
+    <br />
+
+    <label class="form-label">Tarih</label>
+    <input type="text" name="Tarih" class="form-control" required>
+    <br />
+
+    <button class="btn btn-primary">Save</button>
+
+</form>

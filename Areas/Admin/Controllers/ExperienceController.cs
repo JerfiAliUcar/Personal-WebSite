@@ -45,7 +45,10 @@ namespace AspNetMvcPersonalWebSite.Areas.Admin.Controllers
                 var experienceDb = _db.Experience.Find(experience.Id);
                 if (experienceDb != null)
                 {
-                   
+                   experienceDb.Title=experience.Title;
+                    experienceDb.SubTitle=experience.SubTitle;
+                    experienceDb.Description=experience.Description;
+                    experienceDb.Tarih=experience.Tarih;
 
                     _db.SaveChanges();
 

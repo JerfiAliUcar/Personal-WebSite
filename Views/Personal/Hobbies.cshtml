@@ -4,10 +4,35 @@
 <section class="resume-section" id="interests">
     <div class="resume-section-content">
         <h2 class="mb-5">HOBİ / İLGİ ALANLARIM</h2>
+
+        <ul class="list-inline dev-icons">
+            <li class="list-inline-item" style="color:rgb(86, 29, 37)"><i class="fas fa-cat"></i></li>
+            <li class="list-inline-item" style="color:rgb(206, 129, 71)"><i class="fas fa-paw"></i></li>
+            <li class="list-inline-item" style="color:rgb(236, 221, 123)"><i class="fas fa-dog"></i></li>
+            <li class="list-inline-item" style="color:rgb(211, 226, 152)"><i class="fas fa-gamepad"></i></li>
+            <li class="list-inline-item" style="color:rgb(205, 231, 190)"><i class="fas fa-drumstick-bite"></i></li>
+            <li class="list-inline-item" style="color:rgb(230, 211, 163)"><i class="fas fa-futbol"></i></li>
+            <li class="list-inline-item" style="color:rgb(216, 209, 116)"><i class="fas fa-plane"></i></li>
+            <li class="list-inline-item" style="color:orange"><i class="fab fa-bitcoin"></i></li>
+        </ul>
+
+
+
+@*
+        <ul class="list-inline dev-icons">
+<li><i class="fas fa-cat " style="font-size:40px;"> </i></li>
+            <li><i class="fas fa-paw" style="font-size:40px"> </i></li>
+            <li><i class="fas fa-dog" style="font-size:40px"> </i></li>
+            <li><i class="fas fa-gamepad" style="font-size:40px"> </i></li>
+            <li><i class="fas fa-drumstick-bite" style="font-size:40px"> </i></li>
+            <li><i class="fas fa-futbol" style="font-size:40px"> </i></li>
+            <li><i class="fab fa-bitcoin" style="font-size:40px"> </i></li> </ul>
+*@
         @foreach (Interests item in Model)
-        {
-            <p>@item.Description1</p>
-            <p class="mb-0">@item.Description2</p>
+        {<div class="">   
+            <p class="mt-4" style="font-size:20px">@item.Description1</p>
+            <p class="mb-0" style="font-size:20px">@item.Description2</p>
+         </div>
         }
     </div>
 </section>

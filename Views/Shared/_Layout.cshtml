@@ -31,7 +31,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-controller="Home" asp-action="Experience">PROJELER</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-controller="Personal" asp-action="Education">EĞİTİM</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-controller="Personal" asp-action="Skills">BECERİLER</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-controller="Personal" asp-action="Hobbies">İLGİ ALANLARI / HOBİLER</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-controller="Personal" asp-action="Hobbies">HOBİ / İLGİ ALANLARIM</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-controller="Personal" asp-action="Certification">SERTİFİKALAR</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-controller="Contact" asp-action="ContactMe">İLETİŞİM</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-area="Admin" asp-controller="About" asp-action="Index">ADMIN PANEL</a></li>
@@ -39,13 +39,13 @@
 
                 @if (Context.User.Identity.IsAuthenticated)
                 {                    
-                    <li class="nav-item"><a class="nav-link" asp-controller="Auth" asp-action="Logout">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Auth" asp-action="Logout">Çıkış Yap</a></li>
 
                 }
                 else
                 {
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Login">Login</a>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Login">Giriş Yap</a>
                     </li>
                 }
             </ul>

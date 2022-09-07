@@ -1,8 +1,10 @@
 ﻿using AspNetMvcPersonalWebSite.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetMvcPersonalWebSite.Areas.Admin.Controllers
 {
+    [Authorize]
     [Area("Admin")]
     public class ContactController : Controller
     {

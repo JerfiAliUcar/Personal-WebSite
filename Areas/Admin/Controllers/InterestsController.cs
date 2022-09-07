@@ -1,9 +1,11 @@
 ﻿using AspNetMvcPersonalWebSite.Data;
 using AspNetMvcPersonalWebSite.Models.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetMvcPersonalWebSite.Areas.Admin.Controllers
 {
+    [Authorize]
     [Area("Admin")]
     public class InterestsController : Controller
     {

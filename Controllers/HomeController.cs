@@ -21,7 +21,7 @@ namespace AspNetMvcPersonalWebSite.Controllers
             return View(info);
         }
 
-        [Authorize]
+
         public IActionResult Experience()
         {
             var experiences = _db.Experience.ToList();
